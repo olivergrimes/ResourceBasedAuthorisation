@@ -13,7 +13,7 @@ namespace ResourceAuthExample.Controllers
         [HttpGet]
         public IEnumerable<Item> Get()
         {
-            //Resource based authorisation would have to be handled separate to the ItemOwner attribute.
+            //It's easier to apply resource based authorisation within the query if multiple resources are being requested 
             return new Item[0];
         }
 
